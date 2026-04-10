@@ -1,9 +1,9 @@
 import { ApiError } from '../middlewares/error.middleware';
 
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const GROQ_API_KEY = process.env.GROQ_API_KEY ;
 
 export const improveDescription = async (title: string, description: string): Promise<string> => {
+  const GROQ_API_KEY = process.env.GROQ_API_KEY;
   if (!GROQ_API_KEY) {
     throw new ApiError('AI service is not configured', 500);
   }

@@ -46,8 +46,6 @@ The backend will start on `http://localhost:5000` and the API base URL is:
    npm install
 
 3. (Optional) Configure backend API URL by creating a `.env` file in `Frontend` with:
-   VITE_API_BASE_URL=http://localhost:5000/api
-   If you do not create this file, the frontend will use `http://localhost:5000/api` by default.
 
 ### Start the frontend
 npm run dev
